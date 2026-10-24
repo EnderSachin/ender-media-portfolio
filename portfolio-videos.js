@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{const vids=[...document.querySelectorAll('.real-video-frame video')];vids.forEach(v=>{v.addEventListener('play',()=>{vids.forEach(other=>{if(other!==v)other.pause()})})})});
